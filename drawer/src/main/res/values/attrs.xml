@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Drawer">
+        <attr name="drawerHandle" format="reference" />
+        <attr name="drawerOpen" format="string|reference" />
+        <attr name="drawerClosed" format="string|reference" />
+        <attr name="drawerOpenColor" format="color|reference" />
+        <attr name="drawerClosedColor" format="color|reference" />
+        <attr name="drawerPeek" format="dimension" />
+        <attr name="drawerHandleHeight" format="dimension" />
+        <attr name="drawerHandleWidth" format="dimension" />
+        <attr name="drawerHandleId" format="reference" />
+        <attr name="drawerHandleTextSize" format="dimension" />
+        <attr name="drawerInitialState" format="enum">
+            <enum name="closed" value="0" />
+            <enum name="open" value="1" />
+        </attr>
+        <attr name="drawerSlideDuration" format="integer|reference" />
+    </declare-styleable>
+</resources>

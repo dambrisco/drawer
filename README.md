@@ -1,5 +1,5 @@
 # drawer
-This is an rather simplistic implementation of an Android drawer widget which provides a handle.
+This is a rather simplistic implementation of an Android drawer widget which provides a handle.
 
 It supports click, drag, and fling actions out of the box.
 

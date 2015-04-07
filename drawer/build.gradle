@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'maven'
 
 android {
     compileSdkVersion 21
@@ -18,6 +19,15 @@ android {
     }
     lintOptions {
         abortOnError false
+    }
+}
+
+uploadArchives {
+    repositories.mavenDeployer {
+        pom.groupId = "com.dambrisco"
+        pom.artifactId = "drawer"
+        pom.version = "0.1"
+        repository(url: "file:///$buildDir/mavenRelease")
     }
 }
 

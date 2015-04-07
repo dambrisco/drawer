@@ -23,3 +23,5 @@ It supports click, drag, and fling actions out of the box.
 * Include the library in your project
 * Use in XML or programmatically - Drawer extends LinearLayout so it can be used just as any other ViewGroup
 * Fill in attributes - no guarantees on what happens if some are missing although theoretically it'll work
+
+[![Download](https://api.bintray.com/packages/dambrisco/maven/Drawer/images/download.svg) ](https://bintray.com/dambrisco/maven/Drawer/_latestVersion)

@@ -154,7 +154,7 @@ public class Drawer extends LinearLayout {
         openColor = array.getColor(R.styleable.Drawer_drawerOpenColor, 0x000000);
         closedColor = array.getColor(R.styleable.Drawer_drawerClosedColor, 0x000000);
 
-       mHandleBackground = array.getDrawable(R.styleable.Drawer_drawerHandle);
+        mHandleBackground = array.getDrawable(R.styleable.Drawer_drawerHandle);
 
         handleWidth = array.getDimension(R.styleable.Drawer_drawerHandleWidth, -2);
         handleHeight = array.getDimension(R.styleable.Drawer_drawerHandleHeight, -2);
@@ -340,7 +340,7 @@ public class Drawer extends LinearLayout {
     /**
      * Sets the open handle to the provided view
      */
-    @SuppressWarnings({"unused", "deprecation"})
+    @SuppressWarnings({ "unused", "deprecation" })
     public void setOpenHandle(Drawable d) {
         if (Build.VERSION.SDK_INT >= 16) {
             mHandle.setBackground(mHandleBackground);
@@ -607,11 +607,11 @@ public class Drawer extends LinearLayout {
         void onClose();
     }
 
-    private static void toggleEnabled(boolean enable, ViewGroup vg){
-        for (int i = 0; i < vg.getChildCount(); i++){
+    private static void toggleEnabled(boolean enable, ViewGroup vg) {
+        for (int i = 0; i < vg.getChildCount(); i++) {
             View child = vg.getChildAt(i);
             child.setEnabled(enable);
-            if (child instanceof ViewGroup){
+            if (child instanceof ViewGroup) {
                 toggleEnabled(enable, (ViewGroup) child);
             }
         }
